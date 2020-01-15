@@ -1,0 +1,29 @@
+{
+    "name": "batch-perks",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "await-exec": "^0.1.2",
+        "image-to-base64": "^2.0.1",
+        "jimp": "^0.8.3",
+        "ncp": "^2.0.0",
+        "recursive-readdir": "^2.2.2",
+        "regedit": "^3.0.3"
+    },
+    "bin": "index.js",
+    "pkg": {
+        "targets": [
+            "node12-win-x64"
+        ],
+        "assets": [
+            "node_modules"
+        ]
+    }
+}
