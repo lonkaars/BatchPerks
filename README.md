@@ -6,7 +6,7 @@ This is a simple app that puts a custom background behind items, perks, offering
 
 ## How to use
 
-1. Download a binary from [releases](github.com/lonkaars/BatchPerks/releases)
+1. Download a binary from [releases](github.com/lonkaars/BatchPerks/releases/latest/download/batchperks-win-x64.zip)
 2. Unzip 
 
 If you want to change the default backgrounds, change the png files in /icons. If you want to modify which colors go behind which perks, change icons.json
