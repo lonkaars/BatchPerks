@@ -1,14 +1,8 @@
 exe test/
-hooks/
+icons_backup/
 icons_backup-manual/
-info/
 node_modules/
-objects/
 psd/
-refs/
 addons.txt
 batchperks.exe
-config
-description
-HEAD
 package-lock.json
