@@ -1,8 +1,9 @@
 var exec = require('await-exec');
+var path = require('path');
 var recursive = require("recursive-readdir");
 var Jimp = require('jimp');
 var ncp = require('ncp');
-var colors = require('./icons.json');
+var colors = require(__dirname + '/icons.json');
 
 var args = process.argv;
 var argdirindex = args.indexOf(args.filter(a => a.includes("Icons"))[0]);
@@ -21,7 +22,7 @@ async function getSteamDir() {
     console.log(`Using directory: ${icons}`)
     console.log('Making a backup of the current icons...')
 
-    ncp(icons, './icons_backup', err => {
+    ncp(icons, path.resolve(__dirname, '/icons_backup'), err => {
         console.log("Done making backup!")
 
         recursive(icons, (err, files) => {
