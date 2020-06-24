@@ -22,7 +22,7 @@ async function getSteamDir() {
     console.log(`Using directory: ${icons}`)
     console.log('Making a backup of the current icons...')
 
-    ncp(icons, path.join(__dirname, '/icons_backup'), err => {
+    ncp(icons, path.join(process.cwd(), '/icons_backup'), err => {
         console.log("Done making backup!")
 
         recursive(icons, (err, files) => {
