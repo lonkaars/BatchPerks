@@ -1,4 +1,3 @@
-var cp = require('child_process');
 var exec = require('await-exec');
 var recursive = require("recursive-readdir");
 var Jimp = require('jimp');
@@ -16,6 +15,8 @@ async function getSteamDir() {
 
 // main
 (async() => {
+	if(process.platform != "win32") console.warn("This program is intended for use on Windows only, unexpected things might happen");
+
     var icons = steam = argdirindex == -1 ? await getSteamDir() : args[argdirindex];
     console.log(`Using directory: ${icons}`)
     console.log('Making a backup of the current icons...')
@@ -25,6 +26,7 @@ async function getSteamDir() {
 
         recursive(icons, (err, files) => {
             files.forEach(async e => {
+				console.log(e)
                 if (colors.find(c => e.includes(c.n))) {
                     var color = colors.find(c => e.includes(c.n)).c;
                     var bottom = await Jimp.read(color);
