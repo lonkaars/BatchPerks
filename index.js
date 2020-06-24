@@ -27,7 +27,6 @@ async function getSteamDir() {
 
         recursive(icons, (err, files) => {
             files.forEach(async e => {
-				console.log(e)
                 if (colors.find(c => e.includes(c.n))) {
                     var color = colors.find(c => e.includes(c.n)).c;
                     var bottom = await Jimp.read(color);
