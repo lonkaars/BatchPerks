@@ -99,6 +99,8 @@
 	{"n": "iconFavors_wardBlack.png", "c": "./icons/offering_purple.png"},
 	{"n": "iconFavors_wardWhite.png", "c": "./icons/offering_purple.png"},
 	{"n": "iconFavors_yamaokasCrest.png", "c": "./icons/offering_green.png"},
+	{"n": "iconFavors_dustyNoose.png", "c": "./icons/offering_green.png"},
+	{"n": "iconFavors_marysLetter.png", "c": "./icons/offering_green.png"},
 
 	{"n": "iconItems_brokenKey.png", "c": "./icons/item_green.png"},
 	{"n": "iconItems_chineseFirecracker.png", "c": "./icons/item_brown.png"},
